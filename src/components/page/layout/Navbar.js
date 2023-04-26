@@ -5,7 +5,7 @@ import * as ig from '../../img/img';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import '@fortawesome/fontawesome-free/css/all.css';
-import AddToCart from '../cart';
+import AddToCart from './cart';
 
 const Navbar = () => {
   return (

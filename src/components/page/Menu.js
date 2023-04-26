@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import * as ig from '../img/img';
 import "../style/main.css";
+import handleAddToCart from '../page/layout/cart';
 
 
 const DishCard = ({ dish, addToCart }) => {
@@ -17,7 +18,7 @@ const DishCard = ({ dish, addToCart }) => {
         <h3 className="dish-name">{name}</h3>
         <p className="dish-description">{description}</p>
         <p className="dish-price">{price}</p>
-        <button className="btn orange" onClick={handleClick}>
+        <button className="btn orange" onClick={handleAddToCart}>
           Add to Cart
         </button>
       </div>

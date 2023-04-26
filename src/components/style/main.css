@@ -428,13 +428,13 @@ header .navbar .cart i {
 }
 
 .dish-name {
-  font-size: 1.5rem;
+  font-size: 2.3rem;
   font-weight: bold;
   margin-bottom: 0.5rem;
 }
 
 .dish-description {
-  font-size: 1.2rem;
+  font-size: 1.7rem;
   margin-bottom: 1rem;
   color: #333;
 }
@@ -453,14 +453,35 @@ header .navbar .cart i {
 }
 
 .add-to-cart-btn {
-  background-color: #333;
-  color: #fff;
-  padding: 0.5rem 1rem;
-  border-radius: 5px;
-  border: none;
+  box-sizing: border-box;
+  border: 2px solid var(--ornage);
+  border-radius: 0.6em;
+  color: var(--ornage);
   cursor: pointer;
+  display: flex;
+  align-self: center;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1;
+  margin-left: 2rem;
+  padding: 1rem 2.6rem;
+  text-align: center;
+  font-weight: bold;
 }
-
+.add-to-cart-btn:hover .add-to-cart-btn:focus {
+  color: #fff;
+  outline: 0;
+}
+.third {
+  border-color: var(--ornage);
+  color: #fff;
+  box-shadow: 0 0 40px 40px var(--ornage) inset, 0 0 0 0 var(--ornage);
+  transition: all 150ms ease-in-out;
+}
+.third:hover {
+  box-shadow: 0 0 10px 0 var(--ornage) inset, 0 0 10px 4px var(--ornage);
+  color: #000;
+}
 .cart-dropdown {
   position: absolute;
   top: 100%;
@@ -504,6 +525,51 @@ header .navbar .cart i {
   font-style: italic;
   color: #666;
 }
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+form {
+  margin-top: 2rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  margin-bottom: 1rem;
+}
+
+input[type="submit"] {
+  display: inline-block;
+  padding: 0.5rem 2rem;
+  border-radius: 0.25rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #0069d9;
+}
+
+.error-message {
+  color: red;
+  margin-bottom: 1rem;
+}
+
 
 
 

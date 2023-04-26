@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <section className="footer">
     <div className="share">
-      <a href="#" className="btn yellow"> Github</a>
+      <a href="https://github.com/KushalLimbasiya/zuma-food-website" className="btn yellow"> Github</a>
     </div>
     <h2 className="creadit">
       Created by

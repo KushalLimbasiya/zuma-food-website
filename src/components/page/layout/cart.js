@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../style/main.css";
+import "../../style/main.css";
 
 const AddToCart = ({ item }) => {
   const [cartOpen, setCartOpen] = useState(false);
@@ -26,8 +26,8 @@ const AddToCart = ({ item }) => {
 
   return (
     <div className="add-to-cart">
-      <button className="add-to-cart-btn" onClick={handleAddToCart}>
-        Add to Cart
+      <button className="add-to-cart-btn third" onClick={handleAddToCart}>
+        Cart
       </button>
       {cartOpen && (
         <div className="cart-dropdown">
