@@ -110,5 +110,5 @@ const Menu = () => {
     </section>
   );
 };
-
+ 
 export default Menu;
