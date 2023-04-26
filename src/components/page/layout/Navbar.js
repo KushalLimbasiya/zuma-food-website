@@ -5,6 +5,7 @@ import * as ig from '../../img/img';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import '@fortawesome/fontawesome-free/css/all.css';
+import AddToCart from '../cart';
 
 const Navbar = () => {
   return (
@@ -22,7 +23,7 @@ const Navbar = () => {
       <a href="#menu">Menu</a>
       <a href="#Contact">Contact</a>
       <a href="#About">About</a>
-      {/* <Header /> */}
+      <AddToCart />
     </nav>
     </header>
   );
