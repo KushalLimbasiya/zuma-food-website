@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import * as ig from '../img/img';
 import "../style/main.css";
 
+
 const DishCard = ({ dish, addToCart }) => {
   const { name, description, price, image } = dish;
 
@@ -10,16 +11,20 @@ const DishCard = ({ dish, addToCart }) => {
   };
 
   return (
-    <div className="box">
-      <img src={image} alt={name} />
-      <div className="price">{price}</div>
-      <h3>{name}</h3>
-      <button className="add-to-cart" onClick={handleClick}>
-        Add to Cart
-      </button>
+    <div className="dish-card">
+      <img src={image} alt={name} className="dish-image" />
+      <div className="dish-details">
+        <h3 className="dish-name">{name}</h3>
+        <p className="dish-description">{description}</p>
+        <p className="dish-price">{price}</p>
+        <button className="btn orange" onClick={handleClick}>
+          Add to Cart
+        </button>
+      </div>
     </div>
   );
 };
+
 
 const Menu = () => {
   const [dishes, setDishes] = useState([
@@ -43,19 +48,14 @@ const Menu = () => {
     },
   ]);
 
-  const addToCart = (dish) => {
-    console.log(`Adding ${dish.name} to cart`);
-  };
-
   return (
-    <section className="menu" id="menu">
-      <div className="popular">
-        
-        <h1 className="heading">Menu</h1>
-        <div className="box-container">
-          <DishCard dish={dishes[0]} addToCart={addToCart} />
-          <DishCard dish={dishes[1]} addToCart={addToCart} />
-          <DishCard dish={dishes[2]} addToCart={addToCart} />
+    <section className="menu" id='menu'>
+      <div className="menu">
+        <h2 className="section-title">Menu</h2>
+        <div className="dishes-container">
+          <DishCard dish={dishes[0]} />
+          <DishCard dish={dishes[1]} />
+          <DishCard dish={dishes[2]} /> 
         </div>
       </div>
     </section>

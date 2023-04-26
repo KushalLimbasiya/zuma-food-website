@@ -3,6 +3,7 @@
 :root{
   --red:#ff3838;
   --yellow: #ffc222;
+  --ornage:#ff7d1a;
 }
 
 *{
@@ -77,6 +78,20 @@ section{
 .yellow{
     color: var(--yellow);
     border: 0.2rem solid var(--yellow);
+}
+.orange{
+  color: #ff7d1a;
+  border: 0.2rem solid #ff7d1a;
+}
+.orange::before{
+  content: '';
+  position: absolute;
+  top:0; right: 0;
+  width:0%;
+  height:100%;
+  background: #ff7d1a;
+  transition: .3s linear;
+  z-index: -1;
 }
 .red{
     color: var(--red);
@@ -356,148 +371,94 @@ header .navbar .cart i {
 .speciality .box-container .box:hover .content{
   transform: translateY(100%);
 }
-.menu{
-  background-color: #f7f2e2;
-}
-.menu-title{
-  background-color: var(--yellow);
-  text-align: center;
-  font-size: 3.5rem;
-  padding:1rem;
-  color:#666;
-  border-radius: 2rem;
-}
-.menu .box-container{
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.5rem;
-  background-color: #f7f2e2;
-}
-.menu .box-container .box{
-  padding: 2rem;
-  background: #fff;
-  box-shadow: .5rem 1rem rgba(0, 0, 0, .1);
-  border: .1rem solid rgba(0, 0, 0, .3);
-  border-radius: .5rem;
-  text-align: center;
-  flex: 1 1 30rem;
-  position:relative;
 
-}
-.menu .box-container .box img{
-  height: 25rem;
-  object-fit: cover;
-  width: 100%;
-  border-radius: .5rem;
-  
+.menu {
+  background-color: #f7f7f7;
 }
 
-.menu .box-container .box .price{
-  position: absolute;
-  background: var(--red);
-  color: #fff;
+.section-title {
+  margin-bottom: 2rem;
   font-size: 2rem;
-  border-radius: .5rem;
-  padding: .5rem 1rem;
-  top: 3rem;
-  left: 3rem;
+  font-weight: bold;
+  text-align: center;
 }
 
-.menu .box-container .box h3{
-  color: #333;
-  font-size: 2.5rem;
-  padding-top: 1rem;
+.dishes-container {
+  display: flex;
+
+  flex-wrap: wrap;
+  gap: 2rem;
 }
 
-.menu .box-container .box .stars i{
-  color: gold;
-  font-size: 1.7rem;
-  padding: 1rem .1rem;
-}
-
-.menu .box-container .box .add-to-cart{
-  position: absolute;
-  bottom: 2rem;
-  left: 50%;
-  transform: translateX(-50%);
-  background: var(--red);
-  color: #fff;
-  font-size: 1.6rem;
-  border-radius: .5rem;
-  padding: .8rem 1.5rem;
+.dish-card {
+  margin-bottom: 2rem;
+  flex: 1 1 50rem;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0.5rem 1rem rgba(0, 0, 0, .1);
+  border: 0.1rem solid rgba(0, 0, 0, .3);
   cursor: pointer;
+  border-radius: 1.5rem;
 }
 
-.menu .box-container .box .add-to-cart:hover{
-  background: var(--dark-red);
+.dish-card:hover {
+  transform: translateY(-0.2rem);
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
 }
 
-
-/* 
-.Menu {
-  background:url(../img/home-bg.jpg) no-repeat;
-  padding: 2rem 12%;
-  flex-wrap: wrap;
-  gap:1.5rem;
-  min-height: 100vh;
-  align-items: center;
-  background-size: cover;
-  background-position: center;
-}
-.Menu .box-container{
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.5rem;
-}
-.Menu .box-container .box{
-  padding: 2rem;
-  background: #fff;
-  box-shadow: .5rem 1rem rgba(0, 0, 0, .1);
-  border: .1rem solid rgba(0, 0, 0, .3);
-  border-radius: .5rem;
-  text-align: center;
-  flex: 1 1 30rem;
-  position:relative;
-
-}
-.Menu .box-container .box .menu-img{
-  height: 25rem;
-  object-fit: cover;
+.dish-image {
   width: 100%;
-  border-radius: .5rem;
-  
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.2s ease-in-out;
 }
 
-.Menu .box-container .box .price{
-  position: absolute;
-  background: var(--red);
-  color: #fff;
-  font-size: 2rem;
-  border-radius: .5rem;
-  padding: .5rem 1rem;
-  top: 3rem;
-  left: 3rem;
+.dish-image:hover {
+  transform: scale(1.05);
 }
-.menu-item-price{
-  position: absolute;
-  background-color: var(--yellow);
-  color: #fff;
-  font-size: 2rem;
-  border-radius: 0.5rem;
-  padding: .5rem 1rem;
 
+.dish-details {
+  padding: 1rem;
 }
-.Menu .box-container .box h3{
+
+.dish-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.dish-description {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
   color: #333;
-  font-size: 2.5rem;
-  padding-top: 1rem;
 }
 
-.Menu .box-container .box .stars i{
-  color: gold;
-  font-size: 1.7rem;
-  padding: 1rem .1rem;
-} */
+.dish-price {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #e91e63;
+  margin-bottom: 1rem;
+}
+
+.add-to-cart {
+  display: block;
+  width: 100%;
+  padding: 1rem 0;
+  border: none;
+  background-color: #e91e63;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 0 0 0.5rem 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.add-to-cart:hover {
+  background-color: #d81c5c;
+  transition: background-color 0.3s ease-in-out;
+}
+
 
 .popular .box-container{
   display: flex;
