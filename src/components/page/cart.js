@@ -13,7 +13,7 @@ const AddToCart = ({ item }) => {
   const handleCartClick = () => {
     setCartOpen(!cartOpen);
   };
-
+  
   const handleRemoveFromCart = (index) => {
     const newCartItems = [...cartItems];
     newCartItems.splice(index, 1);
