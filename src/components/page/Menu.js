@@ -29,33 +29,56 @@ const DishCard = ({ dish, addToCart }) => {
 const Menu = () => {
   const [dishes, setDishes] = useState([
     {
-      name: "Pizza Margherita",
-      description: "Tomato sauce, mozzarella cheese, and fresh basil",
-      price: "$12.99",
+      name: "Pepperoni Pizza",
+      description: "Tomato sauce, mozzarella cheese, and spicy pepperoni",
+      price: "$14.99",
       image: ig.pizza1,
     },
     {
-      name: "Spaghetti Bolognese",
-      description: "Classic Italian dish with beef and tomato sauce",
-      price: "$15.99",
+      name: "Veggie Pizza",
+      description: "Tomato sauce, mushrooms, bell peppers, onions, and olives",
+      price: "$16.99",
       image: ig.pizza2,
     },
     {
-      name: "Steak Frites",
-      description: "Grilled steak with crispy French fries",
-      price: "$19.99",
+      name: "Hawaiian Pizza",
+      description: "Tomato sauce, mozzarella cheese, ham, and pineapple",
+      price: "$13.99",
       image: ig.pizza3,
     },
-  ]);
+    {
+      name: "Meat Lover's Pizza",
+      description: "Tomato sauce, mozzarella cheese, pepperoni, sausage, ham, and bacon",
+      price: "$19.99",
+      image: ig.pizza4,
+    },
+    {
+      name: "Margherita Pizza",
+      description: "Tomato sauce, fresh mozzarella cheese, and basil",
+      price: "$12.99",
+      image: ig.pizza5,
+    },
+    {
+      name: "Buffalo Chicken Pizza",
+      description: "Tomato sauce, mozzarella cheese, spicy buffalo chicken, and ranch dressing",
+      price: "$18.99",
+      image: ig.pizza6,
+    },
+  ]
+);
+
 
   return (
     <section className="menu" id='menu'>
       <div className="menu">
-        <h2 className="section-title">Menu</h2>
+        <h2 className="section-title"><span className="title"> Menu</span> </h2>
         <div className="dishes-container">
           <DishCard dish={dishes[0]} />
           <DishCard dish={dishes[1]} />
           <DishCard dish={dishes[2]} /> 
+          <DishCard dish={dishes[3]} /> 
+          <DishCard dish={dishes[4]} /> 
+          <DishCard dish={dishes[5]} /> 
         </div>
       </div>
     </section>

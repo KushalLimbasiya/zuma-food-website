@@ -313,7 +313,7 @@ header .navbar .cart i {
   padding:1rem 0;
 }
 .speciality{
-  padding: 2rem 9%;
+  padding: 4rem 9%;
 }
 .speciality .heading {
   text-align: center;
@@ -325,10 +325,11 @@ header .navbar .cart i {
   display: flex;
   flex-wrap: wrap;
   gap:2.5rem;
+  padding: 3rem;
 } 
 
 .speciality .box-container .box{
-  flex:1 1 50rem;
+  flex:1 1 30rem;
   position: relative;
   overflow: hidden;
   box-shadow: 0.5rem 1rem rgba(0, 0, 0, .1);
@@ -375,18 +376,25 @@ header .navbar .cart i {
 .menu {
   background-color: #f7f7f7;
 }
-
-.section-title {
-  margin-bottom: 2rem;
-  font-size: 2rem;
-  font-weight: bold;
+.section-title{
   text-align: center;
+  padding-top: 5rem;
+}
+.section-title .title{
+  padding: 0.8rem 3rem;
+  cursor: pointer;
+  font-size: 3.4rem;
+  border-radius: 0.5rem;
+  border: 0.4rem solid var(--ornage);
+  color: var(--ornage);
 }
 
 .dishes-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: 2.5rem;
+  padding: 14rem;
+  
 }
 
 .dish-card {
@@ -396,8 +404,8 @@ header .navbar .cart i {
   border: 0.1rem solid rgba(0, 0, 0, 0.3);
   border-radius: 1.5rem;
   cursor: pointer;
-  flex: 1000 1000 10rem;
-  margin-bottom: 2rem;
+  flex: 30rem;
+  margin: 1rem;
 }
 
 .dish-card:hover {
@@ -407,7 +415,7 @@ header .navbar .cart i {
 
 .dish-image {
   width: 100%;
-  height: 40rem;
+  height: 30rem;
   object-fit: cover;
   transition: transform 0.2s ease-in-out;
 }
