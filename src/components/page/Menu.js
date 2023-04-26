@@ -14,13 +14,6 @@ const DishCard = ({ dish, addToCart }) => {
       <img src={image} alt={name} />
       <div className="price">{price}</div>
       <h3>{name}</h3>
-      <div className="stars">
-        <i className="fa fa-star"></i>
-        <i className="fa fa-star"></i>
-        <i className="fa fa-star"></i>
-        <i className="fa fa-star"></i>
-        <i className="fa fa-star-half"></i>
-      </div>
       <button className="add-to-cart" onClick={handleClick}>
         Add to Cart
       </button>
@@ -57,7 +50,8 @@ const Menu = () => {
   return (
     <section className="menu" id="menu">
       <div className="popular">
-        <h2 className="section-title">Menu</h2>
+        
+        <h1 className="heading">Menu</h1>
         <div className="box-container">
           <DishCard dish={dishes[0]} addToCart={addToCart} />
           <DishCard dish={dishes[1]} addToCart={addToCart} />

@@ -356,11 +356,22 @@ header .navbar .cart i {
 .speciality .box-container .box:hover .content{
   transform: translateY(100%);
 }
-
+.menu{
+  background-color: #f7f2e2;
+}
+.menu-title{
+  background-color: var(--yellow);
+  text-align: center;
+  font-size: 3.5rem;
+  padding:1rem;
+  color:#666;
+  border-radius: 2rem;
+}
 .menu .box-container{
   display: flex;
   flex-wrap: wrap;
   gap: 1.5rem;
+  background-color: #f7f2e2;
 }
 .menu .box-container .box{
   padding: 2rem;
