@@ -22,7 +22,7 @@ const AddToCart = ({ item }) => {
 
   return (
     <div className="add-to-cart">
-      <button className="add-to-cart-btn" onClick={handleCartClick}>
+      <button className="add-to-cart-btn" onClick={handleAddToCart}>
         Add to Cart
       </button>
       {cartOpen && (
