@@ -1,0 +1,24 @@
+export const cartl = require('./icon-cart.png');
+export const cartw = require('./icon-cartW.png');
+export const logo = require('./logo.png');
+export const home = require('./h1_pizza.png');
+export const pizza1 = require('./pizza1.png');
+export const pizza2 = require('./pizza2.png');
+export const pizza3 = require('./pizza3.png');
+export const pizza4 = require('./pizza4.png');
+export const pizza5 = require('./pizza5.png');
+export const pizza6 = require('./pizza6.png');
+export const side1 = require('./side1.jpg');
+export const s1 = require('./s-1.png');
+export const s2 = require('./s-2.png');
+export const s3 = require('./s-3.png');
+export const s4 = require('./s-4.png');
+export const s5 = require('./s-5.png');
+export const s6 = require('./s-6.png');
+export const simg1 = require('./s-img-1.jpg');
+export const simg2 = require('./s-img-2.jpg');
+export const simg3 = require('./s-img-3.jpg');
+export const simg4 = require('./s-img-4.jpg');
+export const simg5 = require('./s-img-5.jpg');
+export const simg6 = require('./s-img-6.jpg');
+
