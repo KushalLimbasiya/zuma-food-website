@@ -29,44 +29,66 @@ const DishCard = ({ dish, addToCart }) => {
 const Menu = () => {
   const [dishes, setDishes] = useState([
     {
-      name: "Pepperoni Pizza",
-      description: "Tomato sauce, mozzarella cheese, and spicy pepperoni",
-      price: "$14.99",
+      name: "Classic Margherita",
+      description: "Our signature tomato sauce, fresh mozzarella, and basil on our crispy thin crust",
+      price: "$12.99",
       image: ig.pizza1,
     },
     {
-      name: "Veggie Pizza",
-      description: "Tomato sauce, mushrooms, bell peppers, onions, and olives",
-      price: "$16.99",
+      name: "Meatball Madness",
+      description: "Tomato sauce, mozzarella, homemade meatballs, roasted garlic, and parmesan",
+      price: "$17.99",
       image: ig.pizza2,
     },
     {
-      name: "Hawaiian Pizza",
-      description: "Tomato sauce, mozzarella cheese, ham, and pineapple",
-      price: "$13.99",
+      name: "Truffle Mushroom",
+      description: "Mushroom cream sauce, mozzarella, wild mushrooms, and truffle oil",
+      price: "$19.99",
       image: ig.pizza3,
     },
     {
-      name: "Meat Lover's Pizza",
-      description: "Tomato sauce, mozzarella cheese, pepperoni, sausage, ham, and bacon",
-      price: "$19.99",
+      name: "Hawaiian BBQ",
+      description: "BBQ sauce, mozzarella, ham, pineapple, and red onion",
+      price: "$16.99",
       image: ig.pizza4,
     },
     {
-      name: "Margherita Pizza",
-      description: "Tomato sauce, fresh mozzarella cheese, and basil",
-      price: "$12.99",
+      name: "Spicy Sausage",
+      description: "Tomato sauce, mozzarella, spicy Italian sausage, roasted red peppers, and red onion",
+      price: "$14.99",
       image: ig.pizza5,
     },
     {
-      name: "Buffalo Chicken Pizza",
-      description: "Tomato sauce, mozzarella cheese, spicy buffalo chicken, and ranch dressing",
+      name: "Vegan Delight",
+      description: "Tomato sauce, vegan cheese, artichoke hearts, roasted garlic, and kalamata olives",
       price: "$18.99",
       image: ig.pizza6,
     },
-  ]
-);
-
+    {
+      name: "Buffalo Chicken",
+      description: "Buffalo sauce, mozzarella, chicken, and blue cheese crumbles",
+      price: "$15.99",
+      image: ig.pizza7,
+    },
+    {
+      name: "Pesto Primavera",
+      description: "Basil pesto, mozzarella, cherry tomatoes, zucchini, and yellow squash",
+      price: "$20.99",
+      image: ig.pizza8,
+    },
+    {
+      name: "Philly Cheesesteak",
+      description: "Garlic butter sauce, mozzarella, sliced steak, mushrooms, onions, and bell peppers",
+      price: "$23.99",
+      image: ig.pizza9,
+    },
+    {
+      name: "Greek Garden",
+      description: "Olive oil and garlic base, feta cheese, artichoke hearts, red onion, and spinach",
+      price: "$17.99",
+      image: ig.pizza10,
+    }
+]);
 
   return (
     <section className="menu" id='menu'>
@@ -79,6 +101,10 @@ const Menu = () => {
           <DishCard dish={dishes[3]} /> 
           <DishCard dish={dishes[4]} /> 
           <DishCard dish={dishes[5]} /> 
+          <DishCard dish={dishes[6]} /> 
+          <DishCard dish={dishes[7]} /> 
+          <DishCard dish={dishes[8]} /> 
+          <DishCard dish={dishes[9]} /> 
         </div>
       </div>
     </section>

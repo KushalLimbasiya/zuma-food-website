@@ -378,7 +378,7 @@ header .navbar .cart i {
 }
 .section-title{
   text-align: center;
-  padding-top: 5rem;
+  padding-top: 1rem;
 }
 .section-title .title{
   padding: 0.8rem 3rem;
@@ -393,8 +393,8 @@ header .navbar .cart i {
   display: flex;
   flex-wrap: wrap;
   gap: 2.5rem;
-  padding: 14rem;
-  
+  text-align:  center;
+  padding: 10rem;
 }
 
 .dish-card {
@@ -404,8 +404,7 @@ header .navbar .cart i {
   border: 0.1rem solid rgba(0, 0, 0, 0.3);
   border-radius: 1.5rem;
   cursor: pointer;
-  flex: 30rem;
-  margin: 1rem;
+  flex: 30rem 1rem 1rem;
 }
 
 .dish-card:hover {
@@ -448,6 +447,7 @@ header .navbar .cart i {
 }
 
 .add-to-cart {
+  text-align: center;
   display: block;
   width: 100%;
   padding: 1rem 0;
