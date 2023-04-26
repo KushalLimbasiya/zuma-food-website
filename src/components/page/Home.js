@@ -4,6 +4,7 @@ import * as ig from '../img/img';
 import "../style/main.css";
 import Speciality from "./speciality";
 import Menu from './Menu';
+import Contact from "./layout/contact";
 
 const Home = () => {
   return (
@@ -22,7 +23,8 @@ const Home = () => {
       </section>
         <Speciality />
         <Menu />
-      <Footer />
+        <Contact/>
+        <Footer />
     </div>
   );
 };
