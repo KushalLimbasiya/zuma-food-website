@@ -445,16 +445,19 @@ header .navbar .cart i {
   color: #e91e63;
   margin-bottom: 1rem;
 }
+
+/* AddToCart component styles */
+
 .add-to-cart {
   position: relative;
 }
 
 .add-to-cart-btn {
-  background-color: #ff6600;
+  background-color: #333;
   color: #fff;
-  border: none;
-  padding: 10px 20px;
+  padding: 0.5rem 1rem;
   border-radius: 5px;
+  border: none;
   cursor: pointer;
 }
 
@@ -462,46 +465,43 @@ header .navbar .cart i {
   position: absolute;
   top: 100%;
   right: 0;
-  width: 300px;
   background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ccc;
   border-radius: 5px;
+  padding: 1rem;
+  min-width: 200px;
   z-index: 1;
 }
 
 .cart-item {
   display: flex;
   align-items: center;
-  padding: 10px;
-  border-bottom: 1px solid #ccc;
+  margin-bottom: 1rem;
 }
 
 .cart-item-image {
-  width: 60px;
-  height: 60px;
-  object-fit: cover;
-  margin-right: 10px;
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  margin-right: 1rem;
 }
 
 .cart-item-details {
-  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .cart-item-name {
-  margin: 0;
-  font-size: 16px;
   font-weight: bold;
+  margin-bottom: 0.5rem;
 }
 
 .cart-item-price {
-  margin: 0;
-  font-size: 14px;
-  color: #666;
+  margin-bottom: 0.5rem;
 }
 
 .cart-item-quantity {
-  margin: 0;
-  font-size: 14px;
+  font-style: italic;
   color: #666;
 }
 

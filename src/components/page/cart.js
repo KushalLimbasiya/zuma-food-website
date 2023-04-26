@@ -14,9 +14,15 @@ const AddToCart = ({ item }) => {
     setCartOpen(!cartOpen);
   };
 
+  const handleRemoveFromCart = (index) => {
+    const newCartItems = [...cartItems];
+    newCartItems.splice(index, 1);
+    setCartItems(newCartItems);
+  };
+
   return (
     <div className="add-to-cart">
-      <button className="add-to-cart-btn" onClick={handleAddToCart}>
+      <button className="add-to-cart-btn" onClick={handleCartClick}>
         Add to Cart
       </button>
       {cartOpen && (
@@ -29,6 +35,7 @@ const AddToCart = ({ item }) => {
                   <h3 className="cart-item-name">{cartItem.name}</h3>
                   <p className="cart-item-price">{cartItem.price}</p>
                   <p className="cart-item-quantity">Quantity: {cartItem.quantity}</p>
+                  <button className="remove-from-cart-btn" onClick={() => handleRemoveFromCart(index)}>Remove</button>
                 </div>
               </div>
             ))
