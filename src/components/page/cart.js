@@ -13,11 +13,15 @@ const AddToCart = ({ item }) => {
   const handleCartClick = () => {
     setCartOpen(!cartOpen);
   };
-  
-  const handleRemoveFromCart = (index) => {
-    const newCartItems = [...cartItems];
-    newCartItems.splice(index, 1);
-    setCartItems(newCartItems);
+
+  const handleRemoveItem = (indexToRemove) => {
+    setCartItems((prevItems) =>
+      prevItems.filter((_, index) => index !== indexToRemove)
+    );
+  };
+
+  const handleCloseCart = () => {
+    setCartOpen(false);
   };
 
   return (
@@ -27,6 +31,9 @@ const AddToCart = ({ item }) => {
       </button>
       {cartOpen && (
         <div className="cart-dropdown">
+          <button className="close-cart-btn" onClick={handleCloseCart}>
+            X
+          </button>
           {cartItems.length > 0 ? (
             cartItems.map((cartItem, index) => (
               <div key={index} className="cart-item">
@@ -35,7 +42,9 @@ const AddToCart = ({ item }) => {
                   <h3 className="cart-item-name">{cartItem.name}</h3>
                   <p className="cart-item-price">{cartItem.price}</p>
                   <p className="cart-item-quantity">Quantity: {cartItem.quantity}</p>
-                  <button className="remove-from-cart-btn" onClick={() => handleRemoveFromCart(index)}>Remove</button>
+                  <button className="remove-item-btn" onClick={() => handleRemoveItem(index)}>
+                    Remove Item
+                  </button>
                 </div>
               </div>
             ))

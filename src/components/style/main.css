@@ -404,7 +404,7 @@ header .navbar .cart i {
   border: 0.1rem solid rgba(0, 0, 0, 0.3);
   border-radius: 1.5rem;
   cursor: pointer;
-  flex: 30rem 1rem 1rem;
+  flex: 30rem ;
 }
 
 .dish-card:hover {
