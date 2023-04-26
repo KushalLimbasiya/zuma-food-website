@@ -104,7 +104,7 @@ const Menu = () => {
           <DishCard dish={dishes[6]} /> 
           <DishCard dish={dishes[7]} /> 
           <DishCard dish={dishes[8]} /> 
-          <DishCard dish={dishes[9]} /> 
+          <DishCard dish={dishes[9]} />  
         </div>
       </div>
     </section>
