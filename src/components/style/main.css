@@ -1,9 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
-
 :root{
   --ornage:#ff7d1a;
 }
-
 *{
   font-family: 'Nunito', sans-serif;
   margin:0; padding:0;
@@ -13,53 +11,34 @@
   text-transform: capitalize;
   transition:all .2s linear;
 }
-
 *::selection{
   background:var(--ornage);
   color:#fff;
 }
-
 html{
   font-size: 62.5%;
   overflow-x: hidden;
   scroll-behavior: smooth;
   scroll-padding-top: 6rem;
 }
-
 body{
   background:#f7f7f7;
 }
-
 section{
   padding: 2rem 9%;
 }
-
 .heading{
   text-align: center;
   font-size: 3.5rem;
   padding:1rem;
   color:#666;
 }
-
 .heading span{
   color:var(--ornage);
   text-shadow: 2px 2px 4px #000000;
   background-color: #2e2c2c;
   padding: 1rem;
   border-radius: 2rem;
-}
-.button{
-  align-items: center;
-  background-color: #ff7d19;
-  border: unset;
-  border-radius: 10px;
-  box-shadow: 0 6px 5px 2px #fdf4ec;
-  color: #fff;
-  cursor: pointer;
-  display: flex;
-  gap: 12px;
-  justify-content: center;
-  padding: 0.8em;
 }
 .btn{
   display: inline-block;
@@ -73,7 +52,6 @@ section{
   margin-top: 1rem;
   font-weight: bold;
 }
-
 .orange{
   color: #ff7d1a;
   border: 0.2rem solid #ff7d1a;
@@ -88,16 +66,13 @@ section{
   transition: .3s linear;
   z-index: -1;
 }
-  
 .btn:hover::before{
   width:100%;
   left: 0;
 }
-
 .btn:hover{
   color:#000;
 }
-
 header {
   position: fixed;
   top: 0;
@@ -111,7 +86,6 @@ header {
   padding: 1.5rem 9%;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
 }
-
 header .logo {
   font-size: 3rem;
   font-weight: bold;
@@ -120,23 +94,19 @@ header .logo {
   align-items: center;
   margin-right: 3rem;
 }
-
 header .logo img {
   padding-right: 0.3rem;
   width: 4.5rem;
   height: 4.5rem;
   transition: transform 0.2s ease-in-out;
 }
-
 header .logo img:hover {
   transform: rotate(360deg);
 }
-
 header .navbar {
   display: flex;
   align-items: center;
 }
-
 header .navbar a {
   font-size: 2rem;
   margin-left: 5rem;
@@ -145,12 +115,10 @@ header .navbar a {
   text-decoration: none;
   transition: all 0.3s ease-in-out;
 }
-
 header .navbar a:hover {
   color: var(--ornage);
   transform: scale(1.1);
 }
-
 header .navbar a::after {
   content: "";
   position: absolute;
@@ -163,11 +131,9 @@ header .navbar a::after {
   transform-origin: center;
   transition: transform 0.3s ease-in-out;
 }
-
 header .navbar a:hover::after {
   transform: scaleX(1);
 }
-
 #menu-bar{
   font-size: 3rem;
   cursor: pointer;
@@ -177,7 +143,6 @@ header .navbar a:hover::after {
   padding:.5rem 1.5rem;
   display: none;
 }
-
 #home{
   display: flex;
   flex-wrap: wrap;
@@ -200,17 +165,14 @@ header .navbar a:hover::after {
   flex:1 1 40rem;
   padding-top: 6.5rem;
 }
-
 .home .image{
   flex:1 1 40rem;
 }
-
 .home .image img{
   width:100%;
   padding:1rem;
   animation:float 3s linear infinite;
 }
-
 @keyframes float{
   0%, 100%{
     transform: translateY(0rem);
@@ -219,12 +181,10 @@ header .navbar a:hover::after {
     transform: translateY(3rem);
   }
 }
-
 .home .content h3{
   font-size: 6rem;
   color:#eeeeee;
 }
-
 .home .content p{
   font-size: 1.8rem;
   color:#bab7b7;
@@ -245,7 +205,6 @@ header .navbar a:hover::after {
   gap:2.5rem;
   padding: 3rem;
 } 
-
 .speciality .box-container .box{
   flex:1 1 30rem;
   position: relative;
@@ -263,13 +222,11 @@ header .navbar a:hover::after {
   top: -100%;
   left: 0;
 }
-
 .speciality .box-container .box .content{
   text-align: center;
   background: #fff;
   padding: 4rem;  
 }
-
 .speciality .box-container .box .content img{
   margin: 2.5rem 0;
 }
@@ -277,7 +234,6 @@ header .navbar a:hover::after {
   font-size: 2.5rem;
   color: #333;
 }
-
 .speciality .box-container .box .content p{
   font-size: 1.6rem;
   color: #666;
@@ -286,11 +242,9 @@ header .navbar a:hover::after {
 .speciality .box-container .box:hover .image{
   top: 0;
 }
-
 .speciality .box-container .box:hover .content{
   transform: translateY(100%);
 }
-
 .menu {
   background-color: #f7f7f7;
 }
@@ -306,7 +260,6 @@ header .navbar a:hover::after {
   border: 0.4rem solid var(--ornage);
   color: #666;
 }
-
 .dishes-container {
   display: flex;
   flex-wrap: wrap;
@@ -314,7 +267,6 @@ header .navbar a:hover::after {
   text-align:  center;
   padding: 10rem;
 }
-
 .dish-card {
   position: relative;
   overflow: hidden;
@@ -324,33 +276,27 @@ header .navbar a:hover::after {
   cursor: pointer;
   flex: 30rem ;
 }
-
 .dish-card:hover {
   transform: translateY(-0.2rem);
   box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
 }
-
 .dish-image {
   width: 100%;
   height: 30rem;
   object-fit: cover;
   transition: transform 0.2s ease-in-out;
 }
-
 .dish-image:hover {
   transform: scale(1.05);
 }
-
 .dish-details {
   padding: 1rem;
 }
-
 .dish-name {
   font-size: 2.3rem;
   font-weight: bold;
   margin-bottom: 0.5rem;
 }
-
 .dish-description {
   font-size: 1.7rem;
   margin-bottom: 1rem;
@@ -360,30 +306,24 @@ header .navbar a:hover::after {
   font-size: 1.7rem;
   font-weight: bold;
 }
-
 .dish-priceb {
   text-decoration: line-through;
   color: #cc3434;
   display: inline-block;
   margin-right: 1rem;
 }
-
 .dish-price {
   font-size: 1.8rem;
   font-weight: bold;
   color: green;
   display: inline-block;
   margin-bottom: 1rem;
-  margin-left: 1rem; /* added margin to separate from dish name */
+  margin-left: 1rem;
 }
-
-
 /* AddToCart component styles */
-
 .add-to-cart {
   position: relative;
 }
-
 .add-to-cart-btn {
   box-sizing: border-box;
   border: 2px solid var(--ornage);
@@ -425,40 +365,32 @@ header .navbar a:hover::after {
   min-width: 200px;
   z-index: 1;
 }
-
 .cart-item {
   display: flex;
   align-items: center;
   margin-bottom: 1rem;
 }
-
 .cart-item-image {
   width: 50px;
   height: 50px;
   object-fit: contain;
   margin-right: 1rem;
 }
-
 .cart-item-details {
   display: flex;
   flex-direction: column;
 }
-
 .cart-item-name {
   font-weight: bold;
   margin-bottom: 0.5rem;
 }
-
 .cart-item-price {
   margin-bottom: 0.5rem;
 }
-
 .cart-item-quantity {
   font-style: italic;
   color: #666;
 }
-
-
 .steps{
   display: flex;
   flex-wrap: wrap;
@@ -480,40 +412,16 @@ header .navbar a:hover::after {
   color: #333;
   padding: 1rem 0;
 }
-
-.counter-container {
-  background-color: #f5f5f5;
-  display: inline-block;
-  padding: 0.8rem 3rem;
-  cursor: pointer;
-  font-size: 1.7rem;
-  border-radius: 0.5rem;
-  position: relative;
-  overflow: hidden;
-  z-index: 0;
-  color: var(--ornage);
-  margin-top: 1rem;
-  font-weight: bold;
-  border-radius: 1rem;
-}
-
-.counter-value {
-  font-weight: bold;
-}
 /* Style for riview */
-
 .review {
-  /* background: url(../img/home-bg.jpg); */
   padding: 10rem;
   background-color: #f7f2e2;
 }
-
 .review .box-container{
   display: flex;
   flex-wrap: wrap;
   gap: 1.5rem;
 }
-
 .review .box-container .box{
   text-align: center;
   padding: 2rem;
@@ -524,7 +432,6 @@ header .navbar a:hover::after {
   background: #333;
   margin-top: 6rem;
 }
-
 .review .box-container .box img{
   height: 12rem;
   width: 12rem;
@@ -533,109 +440,46 @@ header .navbar a:hover::after {
   margin-top: -8rem;
   object-fit: cover;
 }
-
 .review .box-container .box h3{
   font-size: 2.5rem;
   color: #fff;
   padding: .5rem 0;
 }
-
 .review .box-container .box .stars i{
   font-size: 2rem;
   color: var(--ornage);
   padding: .5rem 0;
 }
-
 .review .box-container .box p{
   font-size: 1.5rem;
   color: #eee;
   padding: 1rem 0;
-}
-
-.order .row{
-  padding: 2rem;
-  box-shadow: .5rem 1rem rgba(0, 0, 0, .1);
-  background: #fff;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.5rem;
-  border-radius: .5rem;
-}
-.order .row .image{
-  flex: 1 1 30rem;
-}
-.order .row .image img{
-height: 100%;
-width: 100%;
-object-fit: cover;
-border-radius: .5rem;
-
-}
-
-.order .row form{
-  flex: 1 1 50rem;
-  padding: 1rem;
-}
-.order .row form .inputBox{
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-.order .row form .inputBox input,.order .row form textarea {
-padding: 1rem;
-margin: 1rem 0rem;
-font-size: 1.7rem;
-color: #333;
-text-transform: none;
-border: .1rem solid rgba(0, 0, 0, .3);
-border-radius: .5rem;
-width: 49%;
-}
-
-.order .row form textarea{
-width: 100%;
-resize: 100%;
-height: 15rem;
-}
-.order .row form .btn{
-  background: none; 
-}
-
-.order .row form .btn:hover{
-  background: var(--ornage);
 }
 /* Style for footer */
 .footer{
   background: #000;
   text-align: center;
 }
-
 .footer .share{
   display: flex;
   gap: 1.5rem;
   justify-content: center;
   flex-wrap: wrap;
-
 }
-
 .footer .creadit{
   padding: 2.5rem 1rem;
   color: #fff;
   font-weight: normal;
   font-size: 2rem;
 }
-
 .footer .creadit span{
   color: var(--ornage);
   padding: .2rem ;
   margin: 1rem;
   font-weight: bold;
 }
-
 /* media quarry */
-
 @media(max-width:991px) {
-  
   html{
     font-size: 55%;
   }
@@ -646,12 +490,10 @@ height: 15rem;
     padding:2rem;
   }  
 }
-
 @media(max-width:768px) {
   #menu-bar{
     display: initial;
   }
-  
   header .navbar{
     position: absolute;
     top: 100%;
@@ -672,22 +514,16 @@ height: 15rem;
     border-left: .5rem solid var(--ornage);
     background: #fff;
   }
-  
 }
-
 @media(max-width:400px) {
-  
   html{
     font-size: 50%;
   }
   .order .row form .inputBox input{
     width: 100%;
   }
-  
 }
-
 /* Style for contact form */
-
 .contact-form {
   display: flex;
   flex-direction: column;
@@ -695,7 +531,6 @@ height: 15rem;
   justify-content: center;
   padding: 4rem;
 }
-
 .contact-form form {
   max-width: 60%;
   width: 100%;
@@ -705,16 +540,13 @@ height: 15rem;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease-in-out;
 }
-
 .contact-form form:hover {
   transform: translateY(-5px);
   box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
 }
-
 .contact-form .form-group {
   margin-bottom: 30px;
 }
-
 .contact-form label {
   font-size: 14px;
   font-weight: 700;
@@ -722,7 +554,6 @@ height: 15rem;
   margin-bottom: 10px;
   display: block;
 }
-
 .contact-form input[type="text"],
 .contact-form input[type="email"],
 .contact-form textarea {
@@ -738,19 +569,16 @@ height: 15rem;
   resize: none;
   transition: all 0.3s ease-in-out;
 }
-
 .contact-form input[type="text"]:hover,
 .contact-form input[type="email"]:hover,
 .contact-form textarea:hover {
   border-color: #dcdcdc;
   transform: translateY(-3px);
 }
-
 .contact-form textarea {
   height: 130px;
   line-height: 130%;
 }
-
 .contact-form button[type="submit"] {
   background-color: #ff6600;
   color: #ffffff;
@@ -764,34 +592,27 @@ height: 15rem;
   margin-top: 30px;
   transition: all 0.3s ease-in-out;
 }
-
 .contact-form button[type="submit"]:hover {
   background-color: #4c4c4c;
   cursor: pointer;
   transform: translateY(-3px);
 }
-
 .contact-form .form-control:focus {
   border-color: #ff6600;
   box-shadow: none;
 }
-
 .contact-form .form-control::-webkit-input-placeholder {
   color: #4c4c4c;
 }
-
 .contact-form .form-control:-moz-placeholder {
   color: #4c4c4c;
 }
-
 .contact-form .form-control::-moz-placeholder {
   color: #4c4c4c;
 }
-
 .contact-form .form-control:-ms-input-placeholder {
   color: #4c4c4c;
 }
-
 .contact-form .form-control::placeholder {
   color: #4c4c4c;
 }
