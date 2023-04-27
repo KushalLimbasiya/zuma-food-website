@@ -5,6 +5,7 @@ import "../style/main.css";
 import Speciality from "./speciality";
 import Menu from './Menu';
 import Contact from "./layout/contact";
+import Review from "./layout/review";
 
 const Home = () => {
   return (
@@ -23,6 +24,7 @@ const Home = () => {
       </section>
         <Speciality />
         <Menu />
+        <Review />
         <Contact/>
         <Footer />
     </div>
