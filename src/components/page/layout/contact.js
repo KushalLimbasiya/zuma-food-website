@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import '../../style/main.css';
+
 const ContactForm = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
@@ -16,7 +17,7 @@ const ContactForm = () => {
   };
 
   return (
-    <section className='contact' id='contact'>
+    <section className='contact' id='Contact'>
         <div className='section-title'>
             <span className='title'>Contact Us</span>
         </div>
