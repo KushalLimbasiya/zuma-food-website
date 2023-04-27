@@ -26,4 +26,6 @@ export const simg3 = require('./s-img-3.jpg');
 export const simg4 = require('./s-img-4.jpg');
 export const simg5 = require('./s-img-5.jpg');
 export const simg6 = require('./s-img-6.jpg');
-
+export const pic1 = require('./pic1.png');
+export const pic2 = require('./pic2.png');
+export const pic3 = require('./pic3.png');
