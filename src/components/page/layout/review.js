@@ -29,7 +29,6 @@ const Review = () => {
                 <p>The quality of the ingredients really shines through in every bite. This pizza is a must-try for any pizza lover.
                 </p>
             </div>
-            
         </div>
     
     </section>
