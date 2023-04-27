@@ -29,3 +29,7 @@ export const simg6 = require('./s-img-6.jpg');
 export const pic1 = require('./pic1.png');
 export const pic2 = require('./pic2.png');
 export const pic3 = require('./pic3.png');
+export const step1 = require('./step-1.jpg');
+export const step2 = require('./step-2.jpg');
+export const step3 = require('./step-3.jpg');
+export const step4 = require('./step-4.jpg');
