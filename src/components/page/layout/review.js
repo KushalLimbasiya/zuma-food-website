@@ -8,7 +8,6 @@ const Review = () => {
     <section class="review" id="review">
         <h1 class="heading"> What your client says</h1>
         <div class="box-container">
-            
             <div class="box">
                 <img src={ig.pic1} alt=""/>
                 <h3>John Smith</h3>

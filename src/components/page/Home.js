@@ -16,7 +16,7 @@ const Home = () => {
               MEDIUM 
               <span className="home-title"> PIZZAS</span></h3>
             <p>Get the best pizzas in town delivered to your doorstep!</p>
-            <a href="#menu" className="btn yellow">Order Now</a>
+            <a href="#menu" className="btn orange">Order Now</a>
         </div>
         <div className="image">
           <img src={ig.home} alt="Delicious Pizza" />

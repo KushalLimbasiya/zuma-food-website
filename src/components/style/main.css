@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
 
 :root{
-  --red:#ff3838;
-  --yellow: #ffc222;
   --ornage:#ff7d1a;
 }
 
@@ -17,7 +15,7 @@
 }
 
 *::selection{
-  background:var(--red);
+  background:var(--ornage);
   color:#fff;
 }
 
@@ -44,7 +42,7 @@ section{
 }
 
 .heading span{
-  color:var(--yellow);
+  color:var(--ornage);
   text-shadow: 2px 2px 4px #000000;
   background-color: #2e2c2c;
   padding: 1rem;
@@ -75,10 +73,7 @@ section{
   margin-top: 1rem;
   font-weight: bold;
 }
-.yellow{
-    color: var(--yellow);
-    border: 0.2rem solid var(--yellow);
-}
+
 .orange{
   color: #ff7d1a;
   border: 0.2rem solid #ff7d1a;
@@ -93,31 +88,6 @@ section{
   transition: .3s linear;
   z-index: -1;
 }
-.red{
-    color: var(--red);
-    border:.2rem solid var(--red);
-}
-.red::before{
-  content: '';
-  position: absolute;
-  top:0; right: 0;
-  width:0%;
-  height:100%;
-  background:var(--red);
-  transition: .3s linear;
-  z-index: -1;
-}
-.yellow::before{
-    content: '';
-    position: absolute;
-    top:0; right: 0;
-    color: #000;
-    width:0%;
-    height:100%;
-    background:var(--yellow);
-    transition: .3s linear;
-    z-index: -1;
-  }
   
 .btn:hover::before{
   width:100%;
@@ -153,7 +123,6 @@ header .logo {
 
 header .logo img {
   padding-right: 0.3rem;
-  color: var(--red);
   width: 4.5rem;
   height: 4.5rem;
   transition: transform 0.2s ease-in-out;
@@ -178,7 +147,7 @@ header .navbar a {
 }
 
 header .navbar a:hover {
-  color: #ffc222;
+  color: var(--ornage);
   transform: scale(1.1);
 }
 
@@ -189,7 +158,7 @@ header .navbar a::after {
   left: 0;
   right: 0;
   height: 2px;
-  background-color: #ffc222;
+  background-color:  var(--ornage);
   transform: scaleX(0);
   transform-origin: center;
   transition: transform 0.3s ease-in-out;
@@ -221,7 +190,7 @@ header .navbar a:hover::after {
   background-position: center;
 }
 .home-title{
-    color: #ffc222;
+    color: var(--ornage);
     padding: 10px 20px;
     border-radius: 5px;
     font-weight: bold;
@@ -509,7 +478,7 @@ header .navbar a:hover::after {
   position: relative;
   overflow: hidden;
   z-index: 0;
-  color: var(--red);
+  color: var(--ornage);
   margin-top: 1rem;
   font-weight: bold;
   border-radius: 1rem;
@@ -517,6 +486,13 @@ header .navbar a:hover::after {
 
 .counter-value {
   font-weight: bold;
+}
+/* Style for riview */
+
+.review {
+  /* background: url(../img/home-bg.jpg); */
+  padding: 10rem;
+  background-color: #f7f2e2;
 }
 
 .review .box-container{
@@ -553,7 +529,7 @@ header .navbar a:hover::after {
 
 .review .box-container .box .stars i{
   font-size: 2rem;
-  color: var(--red);
+  color: var(--ornage);
   padding: .5rem 0;
 }
 
@@ -613,9 +589,9 @@ height: 15rem;
 }
 
 .order .row form .btn:hover{
-  background: var(--red);
+  background: var(--ornage);
 }
-
+/* Style for footer */
 .footer{
   background: #000;
   text-align: center;
@@ -637,7 +613,7 @@ height: 15rem;
 }
 
 .footer .creadit span{
-  color: var(--yellow);
+  color: var(--ornage);
   padding: .2rem ;
   margin: 1rem;
   font-weight: bold;
@@ -680,7 +656,7 @@ height: 15rem;
     padding: 1.5rem;
     display: block;
     border: .2rem solid rgba(0, 0, 0, .1);
-    border-left: .5rem solid var(--red);
+    border-left: .5rem solid var(--ornage);
     background: #fff;
   }
   
