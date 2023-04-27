@@ -31,13 +31,13 @@ const Menu = () => {
   const [dishes, setDishes] = useState([
     {
       name: "Classic Margherita",
-      description: "Our signature tomato sauce, fresh mozzarella, and basil on our crispy thin crust",
+      description: "Our signature tomato sauce, fresh mozzarella, and basil on our crispy",
       price: "$12.99",
       image: ig.pizza1,
     },
     {
       name: "Meatball Madness",
-      description: "Tomato sauce, mozzarella, homemade meatballs, roasted garlic, and parmesan",
+      description: "Tomato sauce, mozzarella, homemade meatballs, roasted garlic",
       price: "$17.99",
       image: ig.pizza2,
     },
@@ -55,13 +55,13 @@ const Menu = () => {
     },
     {
       name: "Spicy Sausage",
-      description: "Tomato sauce, mozzarella, spicy Italian sausage, roasted red peppers, and red onion",
+      description: "Tomato sauce, mozzarella, spicy Italian sausage, roasted red peppers",
       price: "$14.99",
       image: ig.pizza5,
     },
     {
       name: "Vegan Delight",
-      description: "Tomato sauce, vegan cheese, artichoke hearts, roasted garlic, and kalamata olives",
+      description: "Tomato sauce, vegan cheese, artichoke hearts, roasted garlic",
       price: "$18.99",
       image: ig.pizza6,
     },
@@ -73,7 +73,7 @@ const Menu = () => {
     },
     {
       name: "Pesto Primavera",
-      description: "Basil pesto, mozzarella, cherry tomatoes, zucchini, and yellow squash",
+      description: "Basil pesto, mozzarella, cherry tomatoes, zucchini",
       price: "$20.99",
       image: ig.pizza8,
     },
