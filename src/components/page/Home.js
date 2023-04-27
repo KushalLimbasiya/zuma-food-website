@@ -6,6 +6,7 @@ import Speciality from "./speciality";
 import Menu from './Menu';
 import Contact from "./layout/contact";
 import Review from "./layout/review";
+import Step from "./layout/steps";
 
 const Home = () => {
   return (
@@ -24,6 +25,7 @@ const Home = () => {
       </section>
         <Speciality />
         <Menu />
+        <Step />
         <Review />
         <Contact/>
         <Footer />
