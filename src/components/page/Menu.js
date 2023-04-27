@@ -5,7 +5,7 @@ import handleAddToCart from '../page/layout/cart';
 
 
 const DishCard = ({ dish, addToCart }) => {
-  const { name, description, price, image } = dish;
+  const { name, description, priceb,price, image } = dish;
 
   const handleClick = () => {
     addToCart(dish);
@@ -17,7 +17,10 @@ const DishCard = ({ dish, addToCart }) => {
       <div className="dish-details">
         <h3 className="dish-name">{name}</h3>
         <p className="dish-description">{description}</p>
-        <p className="dish-price">{price}</p>
+        <p className="price">
+          <p className="dish-priceb"> {priceb} </p>
+          <p className="dish-price"> {price}</p>
+          </p>
         <button className="btn orange" onClick={handleAddToCart}>
           Add to Cart
         </button>
@@ -32,19 +35,21 @@ const Menu = () => {
     {
       name: "Classic Margherita",
       description: "Our signature tomato sauce, fresh mozzarella, and basil on our crispy",
-      price: "$12.99",
+      priceb:"$12.99",
+      price: "$6.99",
       image: ig.pizza1,
     },
     {
       name: "Meatball Madness",
       description: "Tomato sauce, mozzarella, homemade meatballs, roasted garlic",
-      price: "$17.99",
+      priceb:"$17.99",
+      price: "$12.99",
       image: ig.pizza2,
     },
     {
       name: "Truffle Mushroom",
       description: "Mushroom cream sauce, mozzarella, wild mushrooms, and truffle oil",
-      price: "$19.99",
+      price: "$17.99",
       image: ig.pizza3,
     },
     {
@@ -56,37 +61,40 @@ const Menu = () => {
     {
       name: "Spicy Sausage",
       description: "Tomato sauce, mozzarella, spicy Italian sausage, roasted red peppers",
-      price: "$14.99",
+      priceb:"$14.99",
+      price: "$8.99",
       image: ig.pizza5,
     },
     {
       name: "Vegan Delight",
       description: "Tomato sauce, vegan cheese, artichoke hearts, roasted garlic",
-      price: "$18.99",
+      price: "$13.99",
       image: ig.pizza6,
     },
     {
       name: "Buffalo Chicken",
       description: "Buffalo sauce, mozzarella, chicken, and blue cheese crumbles",
-      price: "$15.99",
+      price: "$8.99",
       image: ig.pizza7,
     },
     {
       name: "Pesto Primavera",
       description: "Basil pesto, mozzarella, cherry tomatoes, zucchini",
-      price: "$20.99",
+      priceb:"$20.99",
+      price: "$6.99",
       image: ig.pizza8,
     },
     {
       name: "Philly Cheesesteak",
       description: "Garlic butter sauce, mozzarella, sliced steak, mushrooms, onions, and bell peppers",
-      price: "$23.99",
+      priceb:"$23.99",
+      price: "$11.99",
       image: ig.pizza9,
     },
     {
       name: "Greek Garden",
       description: "Olive oil and garlic base, feta cheese, artichoke hearts, red onion, and spinach",
-      price: "$17.99",
+      price: "$3.99",
       image: ig.pizza10,
     }
 ]);

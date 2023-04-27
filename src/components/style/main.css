@@ -356,13 +356,27 @@ header .navbar a:hover::after {
   margin-bottom: 1rem;
   color: #333;
 }
+.price {
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+
+.dish-priceb {
+  text-decoration: line-through;
+  color: #cc3434;
+  display: inline-block;
+  margin-right: 1rem;
+}
 
 .dish-price {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-weight: bold;
-  color: #e91e63;
+  color: green;
+  display: inline-block;
   margin-bottom: 1rem;
+  margin-left: 1rem; /* added margin to separate from dish name */
 }
+
 
 /* AddToCart component styles */
 
