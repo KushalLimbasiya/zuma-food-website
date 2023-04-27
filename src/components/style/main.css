@@ -168,7 +168,6 @@ header .navbar a:hover::after {
   transform: scaleX(1);
 }
 
-
 #menu-bar{
   font-size: 3rem;
   cursor: pointer;
