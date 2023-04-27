@@ -21,8 +21,8 @@ const Navbar = () => {
       <a href="#home">home</a>
       <a href="#Speciality">Speciality</a>
       <a href="#menu">Menu</a>
+      <a href="#review">review</a>
       <a href="#Contact">Contact</a>
-      <a href="#About">About</a>
       <AddToCart />
     </nav>
     </header>
