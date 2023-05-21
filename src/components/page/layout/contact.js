@@ -20,7 +20,7 @@ const ContactForm = () => {
     };
 
     const url = 'http://localhost/contact.php';
-    let fData = new FormData();
+    const fData = new FormData();
     fData.append('name', name);
     fData.append('email', email);
     fData.append('subject', subject);
