@@ -1,0 +1,11 @@
+cd /opt/lampp/bin
+
+./mysql -u 'react_api' -p
+
+USE react_api;
+
+select * from contact;
+
+cd /opt/lampp/htdocs
+
+sudo gedit contact.php
